@@ -1,0 +1,42 @@
+.calendar {
+    display: flex;
+    flex-grow: 0.5;
+    flex-direction: column;
+    height: 100vh;
+    border-right: 1px solid rgb(215, 215, 215);
+    .calendarHeader {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin-top: 20px;
+        .MuiSvgIcon-root {
+            cursor: pointer;
+        }
+    }
+    .calendarWrapper {
+        margin-top: 20px;
+        .calendarMain {
+            width: 500px;
+            height: 500px;
+            margin: 0 auto;
+            tbody {
+                .calendarWeek {
+                    th {
+                        height: 81px;
+                    }
+                    .calendarDate {
+                        text-align: center;
+                        cursor: pointer;
+                        transition: all .3s;
+                        &:hover {
+                            background-color: rgb(215, 215, 215);
+                        }
+                    }
+                    .active {
+                        background-color: rgb(215, 215, 215);
+                    }
+                }
+            }
+        }
+    }
+}
